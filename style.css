@@ -1,16 +1,21 @@
 
 body {
     height: 100vh;
-    background: linear-gradient();
-    /* background: url(photo.jpg) no-repeat center center/cover; */
+    background: #dbe4ff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.container {
+    padding: 40px;
+    background-color: #91a7ff;
+    border-radius: 10px;
+}
 #add-task-container {
     width: 350px;
     padding: 20px 10px;
+    margin-bottom: 10px;
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 0 3px;
@@ -21,7 +26,6 @@ input {
     margin-right: 10px;
     border-radius: 10px;
     font-size: 1.2rem;
-    /* padding: 5px; */
     padding: 10px 20px;
 }
 
@@ -29,15 +33,17 @@ input {
     flex: 1;
     transition: 0.3s;
     font-size: 1.2rem;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #fff;
-    color: green;
-    border: green solid 2px;
+    color: lightgray;
+    font-style: italic;
+    border: black solid 2px;
     border-radius: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #add-task:hover {
-    background-color: green;
+    background-color: #748ffc;
     color: #fff;
 }
 
@@ -48,8 +54,8 @@ input {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 3px;
-    padding: 5px;
-    margin-bottom: 5px;
+    padding: 3px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 
@@ -59,8 +65,9 @@ input {
     list-style: none;
     flex: 4;
     padding: 5px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -69,6 +76,7 @@ input {
     border-radius: 10px;
     background-color: #fff;
     cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -76,11 +84,13 @@ input {
     color: orange;
     margin-right: 5px;
     border: solid 2px orange;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    padding: 5px;
 }
 
 .task .deleteTask {
     color: red;
+    margin-right: 5px;
     border: solid 2px red;
     font-size: 1.3rem;
 }

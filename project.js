@@ -41,6 +41,8 @@ addTask.addEventListener('click', function(){
 
     inputTask.value = "";
 
+    
+// CHECK BUTTON
 
     checkButton.addEventListener('click', function(){
 
@@ -56,7 +58,7 @@ addTask.addEventListener('click', function(){
 
     });
 
-
+// DELETE BUTTON
     deleteButton.addEventListener('click', function(e){
 
         let target = e.target;
@@ -67,6 +69,7 @@ addTask.addEventListener('click', function(){
 
     });
 
+    // EDIT BUTTON
     editButton.addEventListener('click', function(e) {
 
         let target = e.target;
