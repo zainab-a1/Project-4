@@ -42,7 +42,7 @@ addTask.addEventListener('click', function(){
     inputTask.value = "";
 
     
-// CHECK BUTTON
+   // CHECK BUTTON
 
     checkButton.addEventListener('click', function(){
 
@@ -58,7 +58,7 @@ addTask.addEventListener('click', function(){
 
     });
 
-// DELETE BUTTON
+    // DELETE BUTTON
     deleteButton.addEventListener('click', function(e){
 
         let target = e.target;
@@ -71,9 +71,13 @@ addTask.addEventListener('click', function(){
 
     // EDIT BUTTON
     editButton.addEventListener('click', function(e) {
-
         let target = e.target;
-        task.edit();
-
-    })
+        let li = task.querySelector('li');
+        let editText = prompt("Edit your task:", li.innerText);
+        if (editText !== null && editText.trim() !== "") {
+            li.innerText = editText;
+        } else if (editText !== null) {
+            alert("Task cannot be empty.");
+        }
+    });
 });
